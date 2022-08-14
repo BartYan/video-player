@@ -1,0 +1,23 @@
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+@import "./components/buttons";
+
+@import "./layout/section";
+@import "./layout/footer";
+
+@import "./reset";
+
+html {
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
