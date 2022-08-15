@@ -1,9 +1,156 @@
+.video video {
+  width: 100%;
+}
+.video__container {
+  width: 100%;
+  user-select: none;
+  overflow: hidden;
+  max-width: 900px;
+  border-radius: 5px;
+  background: #000;
+  aspect-ratio: 16/9;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.video__container.fullscreen {
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+  border-radius: 0px;
+}
+.video__wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.08s ease;
+}
+.video__timeline {
+  height: 7px;
+  width: 100%;
+  cursor: pointer;
+}
+.video__timeline .progress-area {
+  height: 5px;
+  position: relative;
+  background: #4a525f;
+}
+.video__timeline .progress-area span {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: -25px;
+  font-size: 13px;
+  color: #fff;
+  pointer-events: none;
+  transform: translateX(-50%);
+}
+.video__timeline .progress-area .progress-bar {
+  width: 0%;
+  height: 100%;
+  position: relative;
+  background: #15a9ba;
+}
+.video__timeline .progress-area .progress-bar::before {
+  display: none;
+  content: "";
+  right: 0;
+  top: 50%;
+  height: 13px;
+  width: 13px;
+  position: absolute;
+  border-radius: 50%;
+  background: #15a9ba;
+  transform: translateY(-50%);
+}
+.video__timeline:hover .progress-bar::before, .video .video__timeline:hover .progress-area span {
+  display: block;
+}
+.video__controls {
+  padding: 5px 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.video__controls .options-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  justify-content: space-between;
+}
+.video__controls .options-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  justify-content: flex-end;
+}
+.video__controls .options button {
+  height: 40px;
+  width: 40px;
+  font-size: 19px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  color: #efefef;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+.video__controls .options button img {
+  height: 100%;
+  width: 100%;
+  max-width: 20px;
+  line-height: 40px;
+}
+.video__controls .options button:active img {
+  transform: scale(0.9);
+}
+.video__controls .options input {
+  height: 4px;
+  margin-left: 3px;
+  max-width: 75px;
+  border: none;
+  outline: none;
+  accent-color: #15a9ba;
+}
+.video__controls .options .video-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #efefef;
+  margin-left: 15px;
+  font-size: 14px;
+}
+.video__controls .options .video-timer .separator {
+  margin: 0 5px;
+  font-size: 16px;
+  font-family: "Open sans";
+}
+
+.container.show-controls .video__wrapper {
+  opacity: 1;
+  bottom: 0;
+  transition: all 0.13s ease;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 html {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato", sans-serif;
   scroll-behavior: smooth;
 }
 
