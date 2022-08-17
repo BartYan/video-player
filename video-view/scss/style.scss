@@ -1,0 +1,24 @@
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+@import "./components/video";
+@import "./components/volume";
+
+@import "./layout/section";
+
+@import "./reset";
+
+html {
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background-color: #efeff0;
+}

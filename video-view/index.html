@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
+    <title>Awesome Video Player</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="share.jpg" />
+    <meta name="description" content="Awesome Video Player - the only video player you need" />
+    <!--style-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="container">
+        <div class="wrapper">
+            <div class="column video-content">
+                <div class="video show-controls">
+                    <div class="video__wrapper">
+                        <ul class="video__controls-top">
+                            <li>
+                                <button class="like">
+                                    <img src="images/love-icon@3x.png" alt="play video">
+                                </button>
+                            </li>
+                            <li>
+                                <button class="like">
+                                    <img src="images/share-icon@3x.png" alt="play video">
+                                </button>
+                            </li>
+                        </ul>
+                        <ul class="video__controls">
+                            <li class="options options-left">
+                                <button class="play-pause">
+                                    <img src="images/svg/play-icon-w.svg" alt="play video">
+                                </button>
+                                <div class="video__timeline">
+                                    <div class="progress-area">
+                                        <span>00:00</span>
+                                        <div class="progress-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="video-timer">
+                                    <p class="current-time">00:00</p>
+                                    <p class="separator"> / </p>
+                                    <p class="video-duration">00:00</p>
+                                </div>
+                            </li>
+                            <li class="options options-right">
+                                <button class="volume">
+                                    <img src="images/volume-icon@3x.png" alt="volume">
+                                </button>
+                                <input class="styled-slider slider-progress" type="range" min="0" max="1" step="any">
+                                <ul class="resolution-box">
+                                    <li>480p</li>
+                                    <li>720p</li>
+                                    <li>1080p</li>
+                                </ul>
+                                <span class="resolution">720</span>
+                                <button class="fullscreen">
+                                    <img src="images/fullscreen-icon@3x.png" alt="full screen">
+                                </button>
+                                <button class="mobile-video-settings">
+                                    <img src="images/svg/settings.svg" alt="full screen">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <video class="video__player" src="https://bartyan.pl/video-view/videos/example.mp4"></video>
+                </div>
+                <div class="info">
+                    <div class="info__top">
+                        <h2 class="info__head">Lord of the Rings: The Fellowship of the Ring (official trailer)</h2>
+                        <p class="info__desc">
+                            The Lord of the Rings is an epic high-fantasy
+                            novel written by English author J.R.R.Tolkien.
+                            The story began as a sequel to Tolkien's
+                            1937 fantasy novel The Hobbit, but eventually
+                            developed into a much larger work.
+                        </p>
+                        <div class="info__icons">
+                            <div class="info__icons-item">
+                                <img src="images/views-icon@3x.png" alt="views">
+                                <p>12,434,934</p>
+                            </div>
+                            <div class="info__icons-item">
+                                <img src="images/heart-icon@3x.png" alt="likes">
+                                <p>6,563</p>
+                            </div>
+                            <div class="info__icons-item">
+                                <img src="images/comment-icon@3x.png" alt="">
+                                <p>831</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="info__bottom">
+                        <div class="info__bottom-user">
+                            <div class="info__bottom-user--box">
+                                <span class="info__bottom-user--avatar"></span>
+                                <div class="info__bottom-user--info">
+                                    <p class="info__bottom-txt--black">Sara Jameson</p>
+                                    <p class="info__bottom-txt--grey">12,353 followers</p>
+                                </div>
+                            </div>
+                            <button class="info__bottom-user--follow">Fallow</button>
+                        </div>
+                        <div class="info__bottom-upload">
+                            <p class="info__bottom-txt--grey">Uploaded:</p>
+                            <p class="info__bottom-txt--black">8 March, 2007</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column proposed">
+                <p class="proposed__title">Related videos</p>
+                <hr/>
+                <div class="proposed__box">
+                    <a href="/">
+                        <div class="proposed__box-thumb">
+                            <span>2:41</span>
+                        </div>
+                        <div>
+                            <h4 class="proposed__box-title">The Lord of the Rings - Best Scene of the movie(HD)</h4>
+                            <div class="proposed__box-views">
+                                <img src="images/views-icon@3x.png" alt="views">
+                                <span class="proposed__box-views--txt">8,204,301</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="proposed__box">
+                    <a href="/">
+                        <div class="proposed__box-thumb">
+                            <span>4:38</span>
+                        </div>
+                        <div>
+                            <h4 class="proposed__box-title">LOTR: The Two Towers - The Battle of the Hornburg</h4>
+                            <div class="proposed__box-views">
+                                <img src="images/views-icon@3x.png" alt="views">
+                                <span class="proposed__box-views--txt">2,857,112</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="proposed__box">
+                    <a href="/">
+                        <div class="proposed__box-thumb">
+                            <span>6:38</span>
+                        </div>
+                        <div>
+                            <h4 class="proposed__box-title">Lord of The Rings - Battle of Helms Deep Opening</h4>
+                            <div class="proposed__box-views">
+                                <img src="images/views-icon@3x.png" alt="views">
+                                <span class="proposed__box-views--txt">3,642,730</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/video.js?2"></script>
+</body>
+</html>
